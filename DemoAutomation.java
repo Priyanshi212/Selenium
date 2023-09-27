@@ -17,6 +17,7 @@ public class DemoAutomation {
 		driver.manage().window().maximize();
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10000));
 		driver.findElement(By.name("q")).sendKeys("selenium");
+		//for enter you have to use KEYS.RETURN
 		driver.findElement(By.name("q")).sendKeys(Keys.RETURN);
 		
 		driver.findElement(By.xpath("//*[@id=\"rso\"]/div[1]/div/div/div/div/div/div/div/div[1]/div/span/a/h3")).click();
